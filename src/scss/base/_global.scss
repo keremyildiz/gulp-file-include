@@ -1,0 +1,44 @@
+::selection {
+    background: $color1;
+    color: $color255;
+  }
+
+  body {
+      padding: 0;
+      margin:0;
+  }
+
+  input{
+      &:focus{
+          outline: none !important;
+      }
+  }
+
+  img {
+      max-width: 100%;
+  }
+  
+  a {
+      cursor: pointer;
+      outline: none;
+  }
+
+  ul{
+      list-style: none;
+      padding:0px;
+      margin-top:0px;
+      margin-bottom: 0px !important;
+  }
+
+  .btn{
+    border-radius: 4px;
+  }
+
+  .basic-banner{
+      &-item{
+          margin:5px 0px;
+        img{
+            border-radius: 6px;
+        }
+      }
+  }

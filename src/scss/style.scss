@@ -1,0 +1,33 @@
+// Global
+@import 'abstract/mixins';
+@import 'abstract/variables';
+@import 'base/global';
+@import 'base/icons';
+@import 'base/utilities';
+
+// Components
+@import 'components/buttons';
+@import 'components/form-ui';
+@import 'components/product-cart';
+@import 'components/tab-menu';
+@import 'components/section-cover';
+@import 'components/breadcrumb';
+@import 'components/pagination';
+
+// Vendors --> Slick JS & Bootstrap & Jquery Modal
+@import 'vendors/bootstrap-custom';
+@import 'vendors/jquery-modal-custom';
+@import 'vendors/slick-custom';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+// Layouts 
+@import 'layouts/header/header';
+@import 'layouts/footer/footer';
+
+
+
+@media(min-width:$breakpoint3){
+    @import 'layouts/header/header-desktop';
+    @import 'layouts/footer/footer-desktop';
+}

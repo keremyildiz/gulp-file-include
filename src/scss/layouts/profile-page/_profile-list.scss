@@ -1,0 +1,84 @@
+//alarm listesi
+.alarm-list{
+
+    &-header{
+        
+    }
+
+    &-body {
+        .control.control-checkbox {height: 20px; margin-bottom: 0;}
+        .alarm-price, .alarm-stock {margin-top: 10px;}
+
+    }
+
+    &-footer{
+
+    }
+}
+
+//favori listesi
+
+.favori-list{
+
+    &-header{
+        
+    }
+
+    &-body {
+        .control.control-checkbox {height: 20px; margin-bottom: 0;}
+        .favori-price, .favori-stock {margin-top: 10px;}
+
+    }
+
+    &-footer{
+
+    }
+}
+
+//DESKTOP
+
+
+@media(min-width:$breakpoint3){
+
+//favori listesi
+    .favori-list{
+
+        &-header{
+            
+        }
+    
+        &-body {
+            .control.control-checkbox {height: 20px; margin-bottom: 0;}
+            .favori-price, .favori-stock {margin-top: 0px;}
+    
+        }
+    
+        &-footer{
+             .favori-list-buttons {justify-content: flex-start;}
+
+    
+        }
+    }
+
+
+//alarm listesi
+    .alarm-list{
+
+        &-header{
+            
+        }
+    
+        &-body {
+            .control.control-checkbox {height: 20px; margin-bottom: 0;}
+            .alarm-price, .alarm-stock {margin-top: 0px;}
+    
+        }
+    
+        &-footer{
+             .alarm-list-buttons {justify-content: flex-start;}
+
+    
+        }
+    }
+
+}

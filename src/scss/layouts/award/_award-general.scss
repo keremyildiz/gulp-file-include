@@ -1,0 +1,47 @@
+.award-list {
+    &-header{
+
+        .award-info {
+            p{  font-size: 24px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: normal;
+                color: #4a4a4a;
+                margin-left: 25px;
+                display: block;
+                margin-top: 20px;}
+
+            background-color: #f5eab4;
+        }
+   
+        .avard-img {
+            img {margin-top: 20px; margin-bottom: 20px;}
+        }
+    }
+
+    &-body {
+        .award-list {
+            img {
+                margin-bottom: 10px;
+                width: 70%;
+            }
+        }
+    }
+
+}
+
+
+//DESKTOP
+@media(min-width:$breakpoint3){
+
+    .award-list {
+        &-header{
+       
+        }
+    
+        &-body {}
+        
+    }
+
+}

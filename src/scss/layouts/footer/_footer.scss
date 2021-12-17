@@ -1,0 +1,85 @@
+.site-footer{
+    color:$color10;
+    > div{
+        width: 100%;
+        text-align: center;
+    }
+    &-top{
+        .footer-menu{
+            ul{
+                li{
+                    font-weight: 500;
+                    width:100%;
+                }
+            }
+        }
+        .footer-social-menu{
+            ul{
+                li{
+                    font-weight: 500;
+                    a{
+                        --color8: #5d5d5d;
+                        --color18: #5d5d5d;
+                    }
+                }
+            }
+        }
+    }
+    &-center{
+        ul{
+            li{
+                font-weight: 500;
+                color:$color10;
+                margin:8px 0px;
+            }
+        }
+        .footer-cat-menu{
+            ul{
+                li{
+                    a{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .subscribe{
+            &-input{
+                position: relative;
+                > input{
+                    border:1px solid $color10;
+                }
+                &-icon{
+                   position: absolute; 
+                   left:5px;
+                   top:50%;
+                   transform: translateY(-50%);
+                }
+                &-text{
+                    position: absolute;
+                    right:5px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    &:before{
+                        content:'';
+                        height:20px;
+                        width:2px;
+                        background: $color10;
+                        position: absolute;
+                        left:0px;
+                        top:50%;
+                        transform: translateY(-50%);
+                    }
+                    input{
+                        border:none;
+                        font-size:12px;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom{
+        .copyright{
+            font-weight: 500;
+        }
+    }
+}

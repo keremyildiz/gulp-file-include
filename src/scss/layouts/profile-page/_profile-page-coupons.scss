@@ -1,0 +1,162 @@
+/*  Kuponlarım Sayfası CSS */
+.empty-coupons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.coupons-page > .line-title{
+     text-align:center;
+     max-width:1140px;
+     position:relative;
+     margin:40px auto;
+}
+ .coupons-page > .line-title:before{
+    content: "";
+    width: 100%;
+    height: 8px;
+    margin: 15px 0 0;
+    background: #f6f6f6;
+    position: absolute;
+    display: block;
+    z-index: -1;
+ }
+ .coupons-page .coupons-page-title{
+     font-weight:unset;
+     display:inline;
+     margin:40px 0px;
+     background:#fff;
+     padding:0px 10px;
+ }
+
+.coupons h2 {
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.coupons .coupons-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.coupons .coupons-header div[class^="coupon-title"] {
+    width: calc(100% / 6);
+    color: #7d7d7d;
+    font-size: 12px;
+    font-weight: bold;
+}
+.coupons .coupons-body{
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    margin:0px -10px;
+    padding-bottom:100px;
+}
+.coupons .coupons-body .coupons-item {
+    width:calc(33% - 20px);
+    margin:10px;
+    font-size: 14px;
+    border: 1px solid #e7e7e7;
+    border-radius:2px;
+    height:255px;
+    position:relative;
+}
+.coupons .coupons-body .coupons-item > div{
+    width:100%;
+    padding:5px 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.coupons .coupons-body .coupons-item > div > span , .coupons .coupons-body .coupons-item .coupon-date span{
+    font-weight:500;   
+    font-size:14px;
+}
+.coupons .coupons-body .coupons-item .coupon-code{
+    font-weight:bold;
+    background: #f7f7f7;
+    padding:10px 20px;
+}
+.coupons .coupons-body .coupons-item .coupon-code span{
+    font-weight:bold;
+}
+.coupons .coupons-body .coupons-item .coupon-condition {
+    font-size:12px;
+    color:#555;
+    background:#fff;
+}
+.coupons .coupons-body .coupons-item .coupon-condition:hover {
+    position:absolute;
+    z-index:999;
+    bottom:0px;
+    box-shadow:0px 0px 5px #e7e7e7;
+}
+.coupons .coupons-body .coupons-item .coupon-condition span{
+    display:block;
+    width:100%;
+    margin:5px 0px;
+}
+.coupons .coupons-body .coupons-item .coupon-condition p{
+    font-size:12px;
+    margin:5px 0px;
+}
+.coupons .coupons-body .coupons-item .coupon-condition .more-text {
+    display:none;
+}
+.coupons .coupons-body .coupons-item .coupon-condition:hover .less-text {
+    display:none;         
+}
+.coupons .coupons-body .coupons-item .coupon-condition:hover .more-text {
+    display:block;
+    height:auto;
+}
+.coupons .coupons-body .coupons-item .coupon-date {
+    padding:0px;
+}
+.coupons .coupons-body .coupons-item .coupon-date div {
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    padding:5px 20px;
+}
+
+@media(max-width:$breakpoint3){
+
+    /* Kuponlarım Sayfası CSS Responsive */
+
+    .coupons .coupons-header div[class^="coupon-title"] {
+        display: none;
+    }
+
+    .coupons .coupons-body .coupons-item{
+        width:100%;
+        height:auto;
+    }
+    .coupons .coupons-body .coupons-item > div {
+        font-size:13px;
+        width: 100%;
+    }
+    .coupons .coupons-body .coupons-item .coupon-condition:hover{
+        position:relative;
+    }
+    .coupons .coupons-body .coupons-item .coupon-condition .more-text{
+        display:block !important;
+    }
+    .coupons .coupons-body .coupons-item .coupon-condition .less-text{
+        display:none;
+    }
+    .coupons .coupons-body .coupons-item > div > span  , .coupons .coupons-body .coupons-item .coupon-date span{
+        font-size: 12px;
+        color: #7d7d7d;
+        font-weight: bold;
+        display: block;
+        margin: 5px 0px;
+    }
+}

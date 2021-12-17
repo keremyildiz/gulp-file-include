@@ -1,0 +1,18 @@
+.publisher-slider{
+    .slick-slide{
+        margin:0px 5px;
+        a{
+            border:1px solid $color11;   
+            border-radius: 4px;
+            text-align: center;
+            display: block;
+            img{
+                max-width: 120px;
+                width:100%;
+            }
+        }
+    }
+    .slick-dots{
+        bottom:-25px;
+    }
+}

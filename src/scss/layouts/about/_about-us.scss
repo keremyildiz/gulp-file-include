@@ -1,0 +1,35 @@
+.about-us {
+    &-header {
+        min-height: 300px;
+        background-color: #f6f7f9;
+        .about {
+            p {
+                color: #4a4a4a;
+            }
+            span {
+                font-size: 48px;
+            }
+        }
+    }
+    &-body {
+        .about-info-detail {
+            .about-info {
+                border: solid 1px #f1f1f1;
+                background-color: #fcfcfc;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint3) {
+    .about-us {
+        &-header {}
+        &-body {
+            .about-info-detail {
+                flex-wrap: inherit;
+            }
+        }
+    }
+}

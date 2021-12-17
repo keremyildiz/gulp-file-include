@@ -1,0 +1,110 @@
+.profile-user-info {
+    &-wrapper {
+        border: 1px solid transparent;
+    }
+    &-body {
+        padding:30px 0px;
+        align-content: center;
+        .user-img {
+            border: 10px solid $color11;
+            border-radius: 100%;
+            width: 90px;
+            height: 90px;
+            overflow: hidden;
+            img {
+                width: 90%;
+                height: 90%;
+                object-fit: contain;
+            }
+        }
+    }
+    &-footer {
+        margin: 10px 0px;
+        border: 1px solid transparent;
+        .user-menu-mobile-title {
+            border: 1px solid $color4;
+            padding: 10px;
+            svg {
+                border-left: 1px solid $color4;
+                padding-left: 10px;
+            }
+        }
+        .user-menu {
+            &.show {
+                display: flex !important;
+                flex-wrap: wrap;
+                li {
+                    width: 100%;
+                    border: 1px solid $color4;
+                    border-top: none;
+                    a {
+                        padding: 10px;
+                        font-size: 14px !important;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        svg {
+                            display: none;
+                            font-size: 15px;
+                        }
+                        &:hover {
+                            svg {
+                                --color17: #4A4A4A;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width:$breakpoint3) {
+    .profile-user-info {
+        &-header {}
+        &-body {
+            .user-img {
+                width: 150px;
+                height: 150px;
+            }
+            .user-name {
+                span {
+                    font-size: 48px !important;
+                }
+            }
+        }
+        &-footer {
+            margin-bottom: 0px;
+            .user-menu {
+                margin-top: 20px;
+                display: flex !important;
+                li {
+                    a {
+                        color: $color5;
+                        margin: 0px 5px;
+                        font-weight: 600;
+                        border-bottom: 4px solid transparent;
+                        padding: 5px 20px;
+                        display: inline-block;
+                        transition: border-bottom .5s;
+                        font-size: $font-size5;
+                        svg {
+                            display: none;
+                        }
+                    }
+                    &:hover,
+                    &.active {
+                        display: block !important;
+                        a {
+                            border-bottom: 4px solid $color1;
+                            color: $color1;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

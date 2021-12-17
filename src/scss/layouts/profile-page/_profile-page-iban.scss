@@ -1,0 +1,119 @@
+.iban-info .iban-item {
+    border: 1px solid #dedede;
+    margin:20px 0px 20px 40px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(80, 80, 80, 0.1);
+}
+
+    .iban-info .iban-name{
+        font-weight:bold;
+        margin-bottom:3px;
+    }
+
+    .iban-info .iban-desc p{
+        margin:20px 0px;
+    }
+
+    .iban-info #iban_number{
+        text-transform:uppercase;
+    }
+
+    .empty-iban{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:30px;
+    }
+
+
+    .iban-popup {
+        display:none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        max-width: 500px;
+        max-height: 216px;
+        transform: translate(-52% , -50%);
+        border-radius:2px;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .iban-item:after {
+        display:none;   
+        content: '';
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 9;
+        height: 100%;
+        background: rgba(0,0,0,.4);
+        width: 100%;
+    }
+
+    .iban-popup-message{
+        display:block;
+        width:100%;
+        text-align:center;
+        font-size:17px;
+        font-weight:bold;
+        max-width:300px;
+        line-height:1.5;
+        padding:15px;
+    }
+
+    .iban-popup-button{
+        display:inline-block;
+        padding:15px 10px;
+        margin:0 1%;
+        width:45%;
+        color:#fff;
+        cursor:pointer;
+        text-align:center;
+        font-weight:bold;
+        text-transform:uppercase;
+        letter-spacing:2px;
+    }
+
+    .iban-popup-no{
+        background:#9b9b9b;
+    }
+    .iban-popup-no {
+        background:#888686;
+        transition:background 0.3s;
+    }
+    .iban-popup-yes{
+        background:#084793;
+    }
+    .iban-popup-yes:hover{
+        background:#145aaf;
+        transition:background 0.3s;           
+    }
+
+    .iban-delete{
+        padding:10px;
+        cursor:pointer;
+    }
+
+    .iban-item.active .iban-popup , .iban-item.active:after{
+        display:flex;
+    }
+
+    .iban-title{
+         font-size:25px;
+         display: block;
+         text-align: center;
+         line-height:1;
+    }
+    .iban-list , .addnew-iban{
+        margin-top:50px;
+    }

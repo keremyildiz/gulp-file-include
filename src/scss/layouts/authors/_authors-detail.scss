@@ -1,0 +1,43 @@
+.authors-detail {
+    &-header{
+        .authors-img {
+            height: 300px;
+            .authors-name {align-self: flex-end;}
+            .user-img{
+                border:10px solid $color11;
+                border-radius: 100%;
+                width: 150px;
+                height: 150px;  
+                overflow: hidden;
+                img{
+                    width: 90%;
+                    height:90%;
+                    object-fit: contain;
+                }
+            }
+        }
+   
+    }
+
+    &-body {}
+
+    &-footer {}
+
+}
+
+//DESKTOP
+@media(min-width:$breakpoint3){
+
+    .authors-detail {
+        &-header{
+    
+        }
+    
+        &-body {}
+    
+        &-footer {}
+    
+    }
+
+
+}

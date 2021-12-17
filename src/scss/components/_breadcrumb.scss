@@ -1,0 +1,27 @@
+.breadcrumb{
+    display: flex;
+    &-item{
+        a{
+            &::after{
+                content:'/';
+                margin-right:5px;
+            }
+        }
+        &.active{
+            a{
+                font-weight: bold;
+            }
+        }
+        &:last-child{
+            a{
+                &::after{
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$breakpoint3){
+
+}

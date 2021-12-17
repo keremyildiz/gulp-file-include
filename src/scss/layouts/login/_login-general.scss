@@ -1,0 +1,46 @@
+.login-page , .signup-page , .resetpass-page{
+    .login-title , .signup-title , .resetpass-title{
+        font-size:24px;
+    }
+}
+
+.signup-page{
+    .signup-form{
+        &-body{
+            .password-info{
+                list-style-type: disc;
+                li{
+                    margin-left:20px;
+                }
+            }
+        }
+    }
+    .signup-info{
+        ul{
+            li{
+                font-size:14px;
+                color:$color10;
+                margin-bottom:20px;
+                &:before{
+                    content:'';
+                    display: inline-block;
+                    width:8px;
+                    height:8px;
+                    transform: rotate(-315deg);
+                    border:2px solid $color3;
+                    margin-right:10px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$breakpoint3){
+ 
+    .login-page , .signup-page , .resetpass-page{
+        .login-title , .signup-title , .resetpass-title{
+            font-size:48px;
+        }
+    }
+
+}

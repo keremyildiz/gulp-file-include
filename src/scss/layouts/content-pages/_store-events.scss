@@ -1,0 +1,15 @@
+.store-events{
+    &-header{
+
+    }
+    &-body{
+        .event-item{
+            margin:10px 0px;
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width:$breakpoint3) {
+    
+}

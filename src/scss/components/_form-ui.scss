@@ -1,0 +1,320 @@
+@charset "utf-8";
+.form-row {
+    width: 100%;
+    position: relative;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.form-row:after,
+.formMultipleRow:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.formMultipleRow {
+    width: 100%;
+    position: relative;
+}
+
+.textline.big {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.halfCell {
+    float: left;
+    width: calc(50% - 8px);
+}
+
+.formMultipleRow .form-row.placeholder {
+    margin-top: 15px;
+}
+
+.textline {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.textline span {
+    font-weight: normal;
+}
+
+.form-row.placeholder {
+    margin-top: 30px;
+}
+
+.form-row.placeholder .textline {
+    position: absolute;
+    left: 20px;
+    padding: 0 5px;
+    background-color: #ffffff;
+    top: -10px;
+    z-index: 5;
+}
+
+.form-row.thin .textline {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-row .textline {
+    position: static;
+    padding: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-row .textbox {
+    width: 100%;
+    height: 50px;
+    border: 2px solid $color10;
+    padding: 0 10px;
+    color: #4a4a4a;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.form-row.thin .textbox {
+    height: 40px;
+}
+
+.textarea {
+    width: 100%;
+    border: 2px solid $color10;
+    padding: 10px;
+    height: 145px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    color: #4a4a4a;
+    font-size: 15px;
+    resize: vertical;
+}
+
+
+/*error validate*/
+
+.form-row .textbox.error,
+.form-row .selector select.error,
+.form-row .textarea.error {
+    border-color: #dc3545;
+}
+
+.form-row .textbox.error:focus,
+.form-row .selector select.error:focus,
+.form-row .textarea.error:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+    outline: none;
+}
+
+.form-row .textbox.valid,
+.form-row .selector select.valid,
+.form-row .textarea.valid {
+    border-color: #28a745;
+}
+
+.form-row .textbox.valid:focus,
+.form-row .selector select.valid:focus,
+.form-row .textarea.valid:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .25);
+}
+
+.form-row .textbox.valid.ignore,
+.form-row .selector select.valid.ignore,
+.form-row .textarea.valid.ignore {
+    border-color: $color10;
+}
+
+label.error {
+    display: block;
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+label.error.thin {
+    font-size: 13px;
+}
+
+
+/* selectbox*/
+
+.form-row .selector {
+    width: 100%;
+    position: relative;
+    min-height: 50px;
+}
+
+.form-row.thin .selector {
+    min-height: 40px;
+}
+
+.form-row.thin .selector select {
+    height: 40px;
+}
+
+.form-row .selector:after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 16px;
+    border: solid #4a4a4a;
+    border-width: 0 1px 1px 0;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.form-row .selector select {
+    width: 100%;
+    height: 50px;
+    padding: 0px 30px 0px 10px;
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
+    border: 2px solid $color10;
+    color: #4a4a4a;
+    font-size: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-row .selector select:focus {
+    outline: none;
+}
+
+
+/* placeholder color */
+
+.form-row .selector select:not(:focus):invalid {
+    color: #afafaf;
+}
+
+.form-row ::-webkit-input-placeholder {
+    color: #afafaf;
+}
+
+.form-row ::-moz-placeholder {
+    color: #afafaf;
+}
+
+.form-row :-ms-input-placeholder {
+    color: #afafaf;
+}
+
+.form-row :-moz-placeholder {
+    color: #afafaf;
+    opacity: 1;
+}
+
+
+/* checkbox - radio button */
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0
+}
+
+.control-indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    border: 1px solid #5d5d5d;
+}
+
+.control-radio .control-indicator {
+    border-radius: 50%
+}
+
+
+/* .control:hover input ~ .control-indicator,.control input:focus ~ .control-indicator{}
+.control input:checked ~ .control-indicator{}*/
+
+.control input:disabled~.control-indicator {
+    background: #e6e6e6;
+    opacity: .6;
+    pointer-events: none
+}
+
+.control-indicator:after {
+    content: '';
+    position: absolute;
+    display: none
+}
+
+.control input:checked~.control-indicator:after {
+    display: block
+}
+
+.control-checkbox .control-indicator:after {
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border: solid #e7030a;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg)
+}
+
+.control-checkbox input:disabled~.control-indicator:after {
+    border-color: #7b7b7b
+}
+
+.control-radio .control-indicator:after {
+    left: 3px;
+    top: 3px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #e7030a;
+}
+
+.control-radio input:disabled~.control-indicator:after {
+    background: #7b7b7b
+}
+
+.radioGroup:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.radioGroup .control-radio {
+    float: left;
+    padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+    .actionBtn:not(.discountBtn) {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 575px) {
+    .form-row .selector select {
+        padding: 0px 25px 0px 10px
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .form-row .textline {
+        font-size: 14px;
+    }
+}

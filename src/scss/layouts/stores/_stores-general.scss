@@ -1,0 +1,42 @@
+.stores {
+    &-header {
+        min-height: 300px;
+        background-color: #f6f7f9;
+
+        .stores {
+            span {
+                font-size: 44px;
+            }
+        }
+    }
+
+    &-body {
+
+        .stores-info-detail {
+            .stores-info {
+                border: solid 1px #f1f1f1;
+                background-color: #fcfcfc;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: $breakpoint3) {
+    .stores {
+        &-header {
+            .stores {
+                span {
+                    font-size: 48px;
+                }
+            }
+      
+        }
+
+        &-body {
+
+        }
+    }
+}

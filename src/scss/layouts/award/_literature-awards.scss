@@ -1,0 +1,42 @@
+.literature-award {
+    &-header {
+            .award-title {
+                span {
+                    font-size: 44px;
+                }
+            }
+    }
+
+    &-body {
+        .awards-list{
+            height: 322px;
+            > div{
+                border: solid 2px #979797;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+            }
+            svg{
+                --color17:black;
+                }
+                h3 {font-size: 23px;color: #5d5d5d;width: 100%;}
+        }
+
+        .award-type {
+            transform: translate(-1%, 1%);
+        }
+
+    }
+}
+
+@media (min-width: $breakpoint3) { 
+
+    .literature-award {
+        &-header {}
+    
+        &-body {
+    
+        }
+    }
+
+}

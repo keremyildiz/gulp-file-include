@@ -1,0 +1,86 @@
+.mobile-apps{
+    #{&}-header{
+        padding-bottom: 30px;
+    }
+    #{&}-links{
+        a{
+            margin-right:10px;
+            height:50px;
+            border-radius: 3px;
+            color: $color255;
+        }
+    }
+    .scroll-image-scale {
+        animation: scale 1s linear;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        padding-top:50px;
+    }
+    .scroll-image-left{
+        animation: positionLeft 1s linear;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        padding-top:50px;
+    }
+    .scroll-image-right{
+        animation: positionRight 1s linear;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        padding-top:50px;
+    }
+    
+    @keyframes scale {
+        0%   {
+            transform: scale(1);
+        }
+        100%   {
+            transform: scale(1.4);
+        }
+    }
+
+    @keyframes positionLeft {
+        0%   {
+            margin-left: -100px;
+        }
+        100%   {
+            margin-left:0px;
+            padding-left:50px;
+        }
+    }
+
+    @keyframes positionRight {
+        0%   {
+            margin-right: -100px;
+        }
+        100%   {
+            margin-right:0px;
+        }
+    }
+
+}
+
+.scroll-line{
+    position: fixed;
+    top:0px;
+    height:2px;
+    z-index: 99999;
+    left:0px;
+    background: $color1;
+}
+
+//DESKTOP
+@media(min-width:$breakpoint3) {
+    
+}
+
+.krm{
+    position: sticky;
+    top:0px;
+    z-index: 0;
+}
+.deneme{
+    z-index: 9999;
+    height: min-content;
+    background: $color255;
+    position: relative;
+}

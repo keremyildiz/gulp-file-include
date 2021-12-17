@@ -1,0 +1,159 @@
+.product-comment{
+    &-header{
+
+    }
+    &-body{
+        .prd-rate{
+            .prd-rate-progress{
+                .progress-item{
+                    text-align: left;
+                }
+                .progress-bar{
+                    padding:0px;
+                    &-line{
+                        background: $color1;
+                        width:100%;
+                        height:20px;
+            
+                    }
+                }
+                .progress-value{
+                    text-align: right;
+                }
+            }
+        }
+        .detail-comments{
+            &-header{
+                .comment-form{
+                    &-rate{
+                        flex-wrap: wrap;
+                        span{
+                            width:100%;
+                        }
+                        .prd-rate-stars{
+                            width:100%;
+                        }
+                    }
+                    &-rate-content{
+                        textarea{
+                            width:100%;
+                        }
+                    }
+                }
+            }
+            &-body{
+                .dr-tab{
+                    &-header{
+                        
+                    }
+                    &-content{
+                        .comments{
+                            .comment{
+                                padding:10px;
+                                border:1px solid $color11;
+                                margin-bottom:10px;
+                                &-header{
+                                    > div{
+                                        flex-wrap: wrap;
+                                        margin-bottom:10px;
+                                    }
+                                }
+                                &-footer{
+                                    .comment-like{
+                                        flex-wrap: wrap;
+                                        &-buttons{
+                                            margin-top:15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-footer{
+
+    }
+}
+
+
+
+//DESKTOP 
+@media(min-width:$breakpoint3){
+
+    .product-comment{
+        &-header{
+            h4{
+                font-size: 48px !important;
+            }
+        }
+        &-body{
+            .prd-rate{
+                height: min-content;
+                position: sticky;
+                top:105px;
+            }
+            .detail-comments{
+                &-header{
+                    .comment-form{
+                        &-rate{
+                            flex-wrap: nowrap;
+                            span{
+                                width:55%;
+                            }
+                            .prd-rate-stars{
+                                width:45%;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                &-body{
+                    .dr-tab{
+                        &-header{
+                            overflow: unset;
+                            > *{
+                                font-size:24px;
+                            }
+                        }
+                        &-content{
+                            > *{
+                                padding:15px 0px;
+                            }
+                            .comments{
+                                .comment{
+                                    padding:15px;
+                                    &-header{
+                                        > div{
+                                            flex-wrap: wrap;
+                                            margin-bottom:10px;
+                                        }
+                                    }
+                                    &-footer{
+                                        .comment-like{
+                                            flex-wrap: wrap;
+                                            &-buttons{
+                                                margin-top:15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-footer{
+
+        }
+    }
+
+
+
+
+    
+
+}

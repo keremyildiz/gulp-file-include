@@ -1,0 +1,110 @@
+.head-sticky-bar {
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    left: 0px;
+    z-index: 99999;
+    background: #fcfcfc;
+    border-bottom: 3px solid $color1;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    top: -200px;
+    transition: top .4s;
+    &.active {
+        top: 0px;
+        visibility: visible;
+    }
+    .row {
+        align-items: center;
+    }
+    &-left {
+        display: none;
+    }
+    &-right {
+        display: flex;
+        justify-content: flex-end;
+        .price-wrapper {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: left;
+            .price-info {
+                font-size: 15px;
+                .discount {
+                    color: $color1;
+                    display: none;
+                }
+                .oldPrice {
+                    font-weight: 500;
+                    color: $color10;
+                    text-decoration: line-through;
+                }
+            }
+            .salePrice {
+                line-height: 1.2;
+                font-size: 32px;
+                font-weight: bold;
+                height: min-content;
+                width:100%;
+            }
+        }
+        .prd-actions {
+            width: 50%;
+            .quantity {
+                width: 25%;
+                border: 1px solid $color5;
+                border-radius: 2px;
+                padding: 15px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                svg {
+                    font-size: 13px;
+                }
+            }
+            .addToCart {
+                width: 73%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+//DESKTOP 
+@media(min-width:$breakpoint3) {
+    .head-sticky-bar {
+        &-left {
+            display: flex;
+            .prd-img {
+                margin-right: 10px;
+                img {
+                    height: 70px;
+                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+                }
+            }
+            .prd-info {
+                width: 80%;
+                .prd-name {
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+                .prd-author {
+                    .author {
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        &-right {
+            .discount {
+                display: block !important;
+            }
+        }
+    }
+}

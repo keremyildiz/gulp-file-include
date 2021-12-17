@@ -1,0 +1,80 @@
+.page-404{
+    &-wrapper{
+        min-height: 500px;
+        &.bg-img{
+            background: url('../images/frontend/404-page.jpg');
+        }
+        > div{
+            width:100%;
+        }
+    }
+    &-header{
+        .notfound-text{
+            font-size:150px;
+            font-weight: bold;
+        }
+    }
+    &-body{
+        .notfound-search-icon {
+            svg {
+                position: absolute;
+                top: 10px;
+                left: 8px;
+            }
+        }
+
+        .notfound-search-button {
+            input {border: none;}
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 20px;
+                width: 1px;
+                background: #4a4a4a;
+            }
+            position: absolute;
+            right: 2px;
+            top: 2px;
+        }
+    }
+    &-footer{
+        .notfound-cats{
+            ul{
+                li{
+                    a{
+                        background: $color255;
+                    }
+                }
+            }
+        }
+        a{
+            border:1px solid $color1;
+            font-weight: bold;
+            border-radius: 2px;
+            display: inline-block;
+            &:hover{
+                background: $color1 !important;
+                color:$color255 !important;
+                border:1px solid $color2;
+            }
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width:$breakpoint3) {
+
+    .page-404{
+        &-body{
+            .notfound-search{
+                &-input{
+                    min-width: 548px;
+                }
+            }
+        }
+    }
+
+}

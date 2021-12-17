@@ -1,0 +1,92 @@
+.js-product-facet {
+    .categoryContainer {
+        .facet-name {
+            &-mobile {
+                border: 2px solid $color10;
+                padding: 10px;
+                svg {
+                    border-left: 1px solid $color10;
+                    padding-left: 10px;
+                }
+                &.show {
+                    svg {
+                        transform: rotate(180deg);
+                        border-left: none;
+                        padding-left: 0px;
+                        padding-right: 10px;
+                        border-right: 1px solid $color10;
+                    }
+                }
+            }
+        }
+    }
+    .js-link-list {
+        display: none;
+        &.show {
+            display: block;
+            border: 1px solid $color10;
+            border-top: none;
+        }
+        li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid $color5;
+            padding: $space3 $space2;
+            font-size: 13px;
+            color:$color1;
+            &:hover{
+                label{
+                    color:$color1;
+                }
+            }
+            a{
+                transition: padding .5s;
+                &:hover{
+                    padding-left:5px;
+                }
+            }
+            span {
+                &:nth-child(1) {
+                    font-weight: 500;
+                }
+                &:nth-child(2) {
+                    font-size: $font-size2;
+                }
+                label {
+                    margin-bottom: 0px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$breakpoint3) {
+    .js-product-facet {
+        .categoryContainer {
+            
+        }
+        .js-link-list {
+            display: block;
+            border: none !important;
+            li {
+                margin-bottom: 0px;
+                border-bottom: none;
+                padding: $space0;
+                a {
+                    padding: $space2 $space0;
+                    span {
+                        &:nth-child(1) {
+                            font-weight: 500;
+                        }
+                        &:nth-child(2) {
+                            font-size: $font-size2;
+                        }
+                        label {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

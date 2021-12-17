@@ -1,0 +1,354 @@
+.prd-detail{
+    &-header{
+        border:1px solid $color6;
+        padding:5px 0px;
+        align-items: center;
+        .prd-name{
+            font-size: 14px;
+        }
+    }
+    &-body{
+        .prd-slider{
+            margin-top:20px;
+        }
+        .prd-cart{  
+            height: min-content;
+            &-header{
+                .prd-detail-badge{
+                    span{
+                        border-radius: 4px;
+                    }
+                }
+                .prd-name{
+                
+                }
+                .authors-wrapper{
+                    width:100%;
+                    display: flex;
+                    margin:10px;
+                    .author{
+                        margin-right:20px;
+                        span{
+                            display: inline-block;
+                        }
+                        a{
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .price-wrapper{
+                    width:100%;
+                    display: flex;
+                    height: min-content;
+                    flex-wrap: wrap;
+                    text-align: left;
+                    .price-info{
+                        font-size: 15px;
+                        display: flex;
+                        justify-content: flex-start;
+                        .discount{
+                            align-content: center;
+                            border-radius: 4px;
+                            background: $color2;
+                            width:68px;
+                            flex-wrap: wrap;
+                            font-size:$font-size5;
+                            margin-right:30px;
+                            color:$color255;
+                            &-text{
+                                font-size:$font-size2;
+                            }
+                        }
+                        .prices{
+                            .oldPrice{
+                                text-align: left;
+                                font-weight:400;
+                                color:$color10;
+                                text-decoration: line-through;
+                            }
+                            .salePrice{
+                                font-weight: 700;
+                                font-size:33px;
+                                line-height: 33px;
+                            }
+                        }
+                    }
+                    .prd-extra-discount{
+                        border-radius: 4px;
+                        background: #f8d7da;
+                        width:212px;
+                        height:64px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding:10px;
+                        margin:20px 0px;
+                        position: relative;
+                        color:#E7030A;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top:-10px;
+                            left:50%;
+                            transform: translateX(-50%);
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-bottom: 10px solid #f8d7da;
+                        }
+                        &-text{
+                            font-size:$font-size2;
+                        }
+                        &-price{
+                            font-size:$font-size7;
+                            font-weight: 700;
+                        }
+                    }
+                    .StockBadge{
+                        color:$color5;
+                        width:100%;
+                        font-weight: bold;
+                    }
+                }
+                .prd-actions{
+                    width:100%;
+                    flex-wrap: wrap;
+                    .quantity{
+                        width:25%;
+                        border:1px solid $color5;
+                        border-radius: 4px;
+                        padding:9px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        svg{
+                            font-size: 13px;
+                        }
+                    }
+                    .addToCart{
+                        width:73%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                    }
+                    .addToWrapper{
+                        width:100%;
+                        flex-wrap: wrap;
+                        .addToFav , .addToAlarm{
+                            width:100%;
+                            margin-bottom:10px;
+                            a{
+                                svg{
+                                    font-size: 15px;   
+                                    margin-left: 10px;
+                                    --color16:#000;
+                                    --color4:#000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-body{
+                display: flex;
+                flex-wrap: wrap;
+                .book-types{
+                    overflow-x: scroll;
+                    width:100%;
+                    .variant-count{
+                        margin-bottom:10px;
+                    }
+                    .variant{
+                        display: flex;
+                        &-item{
+                            position: relative;
+                            a{
+                                min-width: 120px;
+                                min-height: 32px;
+                                border-radius: 4px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border:1px solid $color4;
+                                margin-right:8px;
+                                font-size:$font-size2;
+                                font-weight: 700;
+                                &:hover , &.selected{
+                                    color:$color1;
+                                    border:2px solid $color1;
+                                }
+                                &.no-selected{
+                                    opacity: .5;
+                                }
+                            }
+                            &-badge{
+                                position: absolute;
+                                bottom:0px;
+                                width:calc(100% - 7px);
+                            }
+                        }
+                    }
+                }
+            }
+            &-footer{
+                .delivery-info{
+                    .delivery-wrapper{
+                        flex-wrap: wrap;
+                        li{
+                            width:100%;
+                            text-align: center;
+                            border:1px solid $color4;
+                            padding:0px 10px;
+                            display: flex;
+                            position: relative;
+                            min-height: 52px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: center;
+                            margin:10px 15px;
+                            span{
+                                font-weight: 500;
+                                font-size:12px;
+                                width:100%;
+                            }
+                            svg{
+                               position: absolute;
+                                left:-22px;
+                                top:50%;
+                                transform: translateY(-50%);
+                                background: $color255;
+                                font-size: 34px; 
+                            }
+                            small{
+                                width:100%;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .prd-short-summary{
+                    padding:0px 15px;
+                    .prd-short-properties{
+                        width:100%;
+                        display: flex;
+                        margin:25px 0px;
+                        .short-prop{
+                            margin-right:20px;
+                            span{
+                                display: inline-block;
+                            }
+                            span:last-child{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .prd-short-desc{
+                        &-link{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-footer{
+    }
+}
+
+
+@media(min-width:$breakpoint2){
+    .prd-detail{
+        &-body{
+            .prd-slider{
+                position: sticky;
+                top:20px;
+                z-index: 1;
+                height: min-content;
+            }
+        }
+    }
+}
+
+@media(min-width:$breakpoint3){
+    .prd-detail{
+        &-header{
+            margin-bottom:30px;
+            .prd-rate-title{
+                justify-content: flex-end !important;
+            }
+        }
+        &-body{
+            .prd-cart{
+                &-header{
+                    .authors-wrapper{
+
+                    }
+                    .price-wrapper{
+                        margin:20px 0px;
+                        width:50%;
+                        text-align: center;
+                        .StockBadge{
+                            width: 50%;
+                        }
+                    }
+                    .prd-actions{
+                        .quantity{
+                            width:17%;
+                        }
+                        .addToCart{
+                            width:82%;
+                        }
+                        .addToWrapper{
+                            margin-top:20px;
+                            .addToFav , .addToAlarm{
+                                border:1px solid $color4;
+                                border-radius: 4px;
+                                padding: 5px 10px;
+                                width:50%;
+                                margin-right:20px;
+                                width:auto;
+                                a{
+                                    span{
+                                        font-size:$font-size2;
+                                        font-weight: 700;
+                                        width:100px;
+                                    }
+                                    svg{
+                                        font-size:25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-body{
+                    .book-types{
+                        overflow: unset;
+                        .variant{
+                            overflow: auto;
+                            flex-wrap: wrap;
+                            &-item{
+                                margin:5px 0px;
+                            }
+                        }
+                    }   
+                }
+                &-footer{
+                    margin-top:20px;
+                    .delivery-info{
+                        .delivery-wrapper{
+                            flex-wrap: nowrap;
+                                li{
+                                    margin-bottom:0px;
+                                    min-height: 65px;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

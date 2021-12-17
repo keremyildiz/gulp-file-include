@@ -1,0 +1,90 @@
+.order-summary{ 
+    font-size:$font-size2;
+    &-header{
+
+    }
+    &-body{
+        > div{
+            span{
+                width:100%;
+                display: block;                
+                &:first-child{
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color:$color11;
+                }
+            }
+            margin:7.5px 0px;
+        }
+    }
+    &-footer{
+        border-top:1px solid $color11;
+        a{
+            display: block;
+            font-weight: bold;
+            margin-bottom:5px;
+        }
+    }
+}
+
+.order-products{
+    &-title{
+        display: none;
+    }
+}
+
+// DESKTOP
+@media(min-width:$breakpoint3){
+
+    .order-detail{
+        &-left{
+            position: sticky;
+            top:20px;
+            height: min-content;
+        }
+        &-right{
+            min-height:1000px;
+        }
+    }
+
+    .order-summary{ 
+        &-header{
+    
+        }
+        &-body{
+            > div{
+                span{                
+                    &:first-child{
+                        text-transform: capitalize;
+                        color:$color4;
+                    }
+                }
+            }
+
+        }
+        &-footer{
+            
+        }
+    }
+
+    .order-products{
+        &-title{
+            display:flex;
+            font-size:$font-size2;
+            color:$color11;
+            text-transform: uppercase;
+            margin-bottom:10px;
+            font-weight:500;
+        }
+        .order-product{
+            &-item{
+                .prd-img{
+
+                }
+                .prd-type{
+                    
+                }
+            }
+        }
+    }
+}

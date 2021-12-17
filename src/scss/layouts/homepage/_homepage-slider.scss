@@ -1,0 +1,45 @@
+.homepage-slider {
+    min-height: 180px;
+    background: #f0f0f0;
+    img {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .slick-arrow{
+        display: none;
+    }
+    &-text-banner {
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+}
+
+@media(min-width:$breakpoint3) {
+    .homepage-content{
+        padding:0px;
+    }
+    .homepage-slider {
+        &.slick-slider {
+            .slick-slide {
+                background-color: $color255;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                img{
+                    max-width: 1200px;
+                    height:390px;
+                    margin:0 auto;
+                }
+            }
+            .slick-arrow{
+                display: block;
+            }
+        }
+        &-text-banner {
+            margin: 15px 0px;
+        }
+    }
+}

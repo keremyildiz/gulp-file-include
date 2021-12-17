@@ -1,0 +1,196 @@
+.prd {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    img {
+        max-width: 140px;
+        max-height: 143px;
+    }
+    a {
+        display: block;
+    }
+    #{&}-wrapper{
+        border:1px solid $color11;
+        border-radius: 4px;
+        height: 180px;
+        position: relative;
+        margin:0px 5px;
+        .product-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100%;
+            a{
+                width: 100%;
+            }
+        }
+    }
+    #{&}-new-icon{
+        position: absolute;
+        left:0px;
+        top:-1px;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding:5px 10px;
+        font-size:$font-size2;
+        background: #1D94D7;
+        color:$color255;
+        font-weight: 400;
+    }
+    #{&}-fav{
+        position: absolute;
+        right: 10px;        
+        top: 5px;
+        svg{
+            font-size:15px;
+        }
+        &:hover{
+            svg{
+                fill:$color1;
+            }
+        }
+    }
+    #{&}-badge {
+        min-height: 21px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: absolute;
+        left:-1px;
+        bottom:-1px;
+        width: calc(100% + 2px);
+        background: $color2;
+        color:$color255;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        font-size: $font-size2;
+    }
+    #{&}-name {
+        overflow: hidden;
+        margin-top: 10px;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom:5px;
+        height: 45px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    #{&}-rate {
+        svg {
+            font-size: 15px;
+        }
+    }
+    #{&}-author {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-height: 21px;
+        text-align: left;
+    }
+    #{&}-info-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom:5px;
+    }
+    #{&}-media-type {
+        min-height: 21px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size:$font-size2;
+        margin-right:10px;
+    }
+    #{&}-publisher {
+        min-height: 21px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size:$font-size2;
+        text-decoration: underline;
+        color:$color1;
+    }
+    #{&}-price-wrapper {
+        min-height: 51px;
+        margin:10px 0px;
+        .prd-prices{
+            text-align: left;
+            .prd-first-price{
+                color:$color5;
+                font-size:$font-size3;
+            }
+            .prd-price {
+                width: 100%;
+                font-size:$font-size5;
+                font-weight: bold;
+            }
+        }
+        .prd-discount-rate{
+            width:40px;
+            height:40px;
+            margin-right:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            background: $color2;
+            color: $color255;
+        }
+    }
+    #{&}-info-badge{
+        span{
+            color:green;
+            text-align: left;
+            font-size: $font-size2;
+            display: block;
+        }
+    }
+    #{&}-content{
+        position: relative;
+        padding:10px;
+
+    }
+    #{&}-buttons {
+        padding:10px 0px;
+        .btn {
+            width: 100%;
+            padding: 4px;
+            font-weight: 600;
+            font-size:$font-size2;
+            &.add-cart-btn{
+                background: $color1;
+                border-radius: 4px;
+                color:$color255;
+            }
+        }
+    }
+    &:hover{
+        box-sizing: border-box;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        .prd-wrapper{
+            border:1px solid $color255;
+        }
+    }
+}
+
+@media(min-width:$breakpoint3) {
+    .prd{
+        #{&}-buttons{
+            display: none;
+            padding:20px 10px;
+            position: absolute;
+            left:0px;
+            width: 100%;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+            z-index: 99;
+            background: $color255;
+        }
+        &:hover{
+            .prd-buttons{
+                display: block;
+            }
+        }
+    }
+}

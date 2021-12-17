@@ -1,0 +1,46 @@
+.section-cover{
+    &-title{
+        font-size:13px;
+        color:$color0;
+        font-weight:bold;
+    }
+    &-button{
+        a{
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-weight: bold;
+            color:$color1;
+            &:hover{
+                color:$color2;
+            }
+            &:after{
+                content:'';
+                width:16px;
+                height:16px;
+                margin-left:5px;
+                display: block;
+                @extend .base64-next;
+                background-size:16px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+
+
+@media(min-width:$breakpoint3){
+    .section-cover{
+        &-title{
+            font-size:28px;
+        }
+        &-button{
+            a{
+                &:before{
+                    
+                }
+            }
+        }
+    }
+}

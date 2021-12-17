@@ -1,0 +1,11 @@
+.cover-cat-banners {
+    margin-top: 10px;
+    >div {
+        margin: 5px 0px;
+        img{
+            border-radius: 6px;
+        }
+    }
+}
+
+@media(min-width:$breakpoint3) {}

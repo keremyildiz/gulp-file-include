@@ -1,0 +1,106 @@
+.orders{
+    &-header{
+
+    }
+    &-body{
+        .orders-title{
+
+        }
+
+        .order-row-title{
+            > div{            
+                color: $color11;
+            }
+        }
+        .order-item{
+            > div {
+                margin-top: 10px;
+            }
+            border: solid 1px #f1f1f1;
+            background-color: #fcfcfc;
+            width: 100%;
+            margin-left: 0px;
+            padding: 10px;
+        }
+        .order-date{
+            > div {
+                color: $color9;
+                font-weight: 500;
+            }
+        }
+        .order-number{
+            > div {
+                color: $color9;
+                font-weight: 500;
+            }
+            
+        }
+        .order-total-price{
+            > div {
+                color: $color9;
+                font-weight: 500;
+            }
+            
+        }
+        .order-statu{
+            .order-box-others{
+                color: $color9;
+                font-weight: 500;
+            }
+            .order-cargo-number{
+                text-decoration: underline;
+                color:$color1;
+                font-weight: bold;
+            }
+        }
+        .order-link{
+            color:$color1;
+            font-weight: bold;
+            color: $color11;
+            span{
+                color: $color1;
+            }
+            svg{
+                --color17:#000;
+                font-size: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+    &-footer{
+        
+    }
+}
+
+//DESKTOP
+@media(min-width:$breakpoint3){
+    .orders{
+        &-header{
+
+        }
+        &-body{
+            .order-row-title{
+                > div{            
+                    padding: 10px;
+                }
+            }
+            .order-item{
+                border: none;
+                background-color: $color255;
+            }
+            .order-statu{
+                .order-box-others{
+                    color: $color0;
+                    font-weight: normal;
+                }
+                .order-cargo-number{
+                    text-decoration: none;
+                }
+            }
+        }
+        &-footer{
+
+        }
+    }
+
+}

@@ -1,0 +1,36 @@
+.site-footer{
+    ul{
+        li{
+            &:hover{
+                a{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    > div{
+        text-align: unset;
+    }
+    &-top{
+        .footer-menu{
+            ul{
+                li{
+                    width:auto;
+                }
+            }
+        }
+    }
+    &-center{
+        .border-right{
+            border-right:1px dashed #ddd !important;
+        }
+        ul{
+            li{
+                text-align: left;
+            }
+        }
+    }
+    &-bottom{
+
+    }
+}

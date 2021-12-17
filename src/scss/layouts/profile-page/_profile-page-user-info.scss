@@ -1,0 +1,32 @@
+
+    .user-form-info {
+        &-header{
+
+        }
+        &-body{
+           
+        }
+        &-footer{
+
+        }
+    }
+
+    
+//DESKTOP
+@media(min-width:$breakpoint3){
+    .user-form-info {
+        &-header{
+
+        }
+        &-body{
+                .formMultipleRow{
+                    .pull-right{
+                        float: right;
+                    }
+                }           
+        }
+        &-footer{
+
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// Global
+@import 'abstract/mixins';
+@import 'abstract/variables';
+
+// Layouts
+@import 'layouts/product-detail/product-slider';
+@import 'layouts/product-detail/product-details';
+@import 'layouts/product-detail/product-description';
+@import 'layouts/product-detail/product-awards';
+@import 'layouts/product-detail/product-comments';
+@import 'layouts/product-detail/product-zoom';
+@import 'layouts/product-detail/product-detail-head-sticky';
+@import 'layouts/product-detail/product-detail-added-modal';
+@import 'layouts/product-detail/product-detail-best-seller';

@@ -1,0 +1,48 @@
+.pagination{
+    li{
+        position: relative;
+        margin:0px 5px;
+        border-bottom:2px solid transparent;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 35px;
+            height:35px;
+            font-size: 22px;
+            padding:0px 5px;
+            svg{
+                font-size: 17px;
+                margin-top:2px;
+                display: block;
+                text-align: center;
+            }
+        }
+        &:hover{
+            border-bottom:2px solid $color2;
+        }
+        &.active{
+            border:1px solid $color3;
+            border-radius: 100%;
+        }
+    }
+    &-next{
+        &:hover{
+            border-bottom: 2px solid transparent !important;
+            svg{
+                --color4: #FFD400;
+            }
+        }
+    }
+    &-prev{
+        &:hover{
+            border-bottom: 2px solid transparent !important;
+            svg{
+                --color4: #FFD400;
+            }
+        }
+    }
+    &-spacer{
+    
+    }
+}

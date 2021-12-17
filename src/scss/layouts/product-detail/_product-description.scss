@@ -1,0 +1,53 @@
+.product-description{
+    &-body{
+        .product-property{
+            ul{
+                width: 100%;
+                li{
+                    display: flex;
+                    border-bottom:1px solid $color6;
+                    margin-bottom:5px;
+                    padding:5px 0px;
+                    strong{
+                        margin-right:20px;
+                        min-width: 30%;
+                    }
+                    span{
+                        min-width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//DESKTOP 
+@media(min-width:$breakpoint3){
+
+    .product-description{
+        &-header{
+            h4{
+                font-size: 48px !important;
+            }
+        }
+        &-body{
+            .product-property{
+                ul{
+                    width: 400px;
+                    li{
+                        strong{
+                            min-width: 100px;
+                            margin-right:20px;
+                        }
+                        span{
+                            min-width:300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

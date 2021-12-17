@@ -1,0 +1,54 @@
+// Fonts
+$font1: 'arial',
+'sans-serif';
+//Font Sizes - 1rem default 16px = xx/16
+$px-to-rem: 16;
+$font-size0: 0;
+$font-size1: 10/$px-to-rem#{rem};
+$font-size2: 12/$px-to-rem#{rem};
+$font-size3: 14/$px-to-rem#{rem};
+$font-size4: 16/$px-to-rem#{rem};
+$font-size5: 18/$px-to-rem#{rem};
+$font-size6: 20/$px-to-rem#{rem};
+$font-size7: 22/$px-to-rem#{rem};
+$font-size8: 24/$px-to-rem#{rem};
+$font-size9: 26/$px-to-rem#{rem};
+$font-size10: 50/$px-to-rem#{rem};
+// Colors
+$color0: #000000;
+$color1: #084793;
+$color2: #E7030A;
+$color3: #FFD400;
+$color4: #4A4A4A;
+$color5: #9B9B9B;
+$color6: #F1F1F1;
+$color7: #092c57;
+$color8: #051c37;
+$color9: #a7a7a7;
+$color10:#5d5d5d;
+$color11:#ccc;
+$color12:#e0e0e0;
+$color255:#FFFFFF;
+// Spacing
+$space0: 0;
+$space1: 5px;
+$space2: 10px;
+$space3: 15px;
+$space4: 20px;
+$space5: 30px;
+$space6: 40px;
+$space7: 50px;
+$space8: 60px;
+$space9: 70px;
+$space10: 80px;
+$space11: 90px;
+$space12: 100px;
+// Breakpoints
+$breakpoint0: 0;
+$breakpoint1: 576px;
+$breakpoint2: 768px;
+$breakpoint3: 1025px;
+// Containers
+$container1: 768px;
+$container2: 1025px;
+$container3: 1200px;
